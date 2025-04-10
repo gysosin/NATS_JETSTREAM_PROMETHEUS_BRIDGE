@@ -1,0 +1,11 @@
+[Unit]
+Description=NATS to Prometheus Exporter
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/exporter
+WorkingDirectory=/etc/exporter
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

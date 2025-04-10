@@ -1,0 +1,7 @@
+{
+    "listen_port": "2112",
+    "nats_url": "nats://localhost:4222",
+    "subject": "metrics",
+    "agent_filter": ["XYFO-LAPTOP"]
+  }
+  
