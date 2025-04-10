@@ -48,7 +48,22 @@ Edit `config.json`:
 go build -o exporter ./cmd/exporter
 ./exporter
 ```
+### 🔨 Build with Make
 
+```bash
+# Build for current OS
+make build
+
+# Build for all platforms (outputs in ./bin/)
+make all
+
+# Build for a specific OS
+make windows   # Windows (nats-prom-bridge.exe)
+make linux     # Linux (nats-prom-bridge-linux)
+make mac       # macOS (nats-prom-bridge-mac)
+
+# Clean build artifacts
+make clean
 ---
 
 ### 🐳 Run with Docker
@@ -115,5 +130,3 @@ Go build cool things. Monitor them smarter. 🚀
 ## 📄 License
 
 MIT — free to use, fork, improve, and share.
-
-```
